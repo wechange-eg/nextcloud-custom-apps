@@ -9,6 +9,6 @@
   <namespace>FullTextSearch_AdminAPI</namespace>
   <website>https://github.com/wechange-eg/nextcloud-custom-apps</website>
   <dependencies>
-    <nextcloud min-version="18" max-version="18" />
+    <nextcloud min-version="18" max-version="21" />
   </dependencies>
 </info>
