@@ -7,6 +7,6 @@
   <license>AGPL</license>
   <default_enable/>
   <dependencies>
-    <nextcloud min-version="18" max-version="18" />
+    <nextcloud min-version="18" max-version="23" />
   </dependencies>
 </info>
