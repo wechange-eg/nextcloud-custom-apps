@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<info>
+    <id>cspworkaround</id>
+    <name>Wechange CSP Workarounds</name>
+    <description>
+        Provides alternative endpoints to Nextcloud APIs. 
+        Our endpoints set a default CSP header, while Nextcloud's don't.
+    </description>
+    <version>0.1.0</version>
+    <license>AGPL</license>
+    <author>Dennis Brakhane</author>
+    <namespace>CspWorkaround</namespace>
+    <website>https://github.com/wechange-eg/nextcloud-custom-apps</website>
+    <dependencies>
+        <nextcloud min-version="20" max-version="24"/>
+    </dependencies>
+</info>
