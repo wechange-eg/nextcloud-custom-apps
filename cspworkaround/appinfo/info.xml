@@ -5,6 +5,20 @@
     <description>
         Provides alternative endpoints to Nextcloud APIs. 
         Our endpoints set a default CSP header, while Nextcloud's don't.
+
+	Provides the endpoints:
+		/apps/cspworkaround/csrftoken
+		/apps/cspworkaround/logout
+	
+	Both endpoints are callable without CSRF tokens.
+
+	The logout endpoint can be called directly and will log the user out.
+	If the config setting "wechange_logout_redirect_url" is set, the endpoint will also redirect to the set URL after logging out.
+
+	The csrftoken endpoint can be used to obtain a CSRF token directly to use with any other endpoints. Example code:
+	
+	let token = (await (await fetch('//cloud.wechange.de/apps/cspworkaround/csrftoken', {credentials: 'include'})).json()).token
+	await fetch(`/nextcloud/logout?requesttoken=${encodeURIComponent(token)}`, {credentials: 'include'})
     </description>
     <version>0.1.0</version>
     <license>AGPL</license>
