@@ -3,7 +3,7 @@
   <id>wechangecsp</id>
   <name>Add WECHANGE to CSP</name>
   <description>Add WECHANGE urls to Content-Security-Policy header, for requests where Nextcloud by default uses an empty CSP</description>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <license>AGPL</license>
   <default_enable/>
   <namespace>WechangeCsp</namespace>
